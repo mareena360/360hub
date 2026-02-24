@@ -2,12 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import DoodleShapes from "@/components/ui/DoodleShapes";
 
 const mainServices = [
     {
         title: "Corporate Services & Business Setup",
         description: "We provide complete Corporate Services and Business Setup support, including company formation, licensing, and full assistance with ongoing corporate compliance across the UAE.",
-        image: "/meeting.png", // Reusing the high-quality meeting image
+        image: "/meeting.png",
     },
     {
         title: "Tax Support & Advisory",
@@ -41,15 +42,11 @@ const secondaryServices = [
 
 export default function Services() {
     return (
-        <section id="services" className="py-24 relative overflow-hidden">
-            {/* Visual Decorations from Design */}
-            <div className="absolute top-1/4 right-[40%] -z-10">
-                <div className="w-12 h-12 grid grid-cols-2 gap-2 opacity-10">
-                    {[1, 2, 3, 4, 5, 6, 7, 8].map(i => <div key={i} className="w-1 h-1 bg-primary rounded-full" />)}
-                </div>
-            </div>
+        <section id="services" className="section-padding bg-white relative overflow-hidden">
+            <DoodleShapes type="squiggle" className="absolute top-10 right-10 rotate-45 opacity-20" delay={2} />
+            <DoodleShapes type="plus" className="absolute bottom-20 left-[10%] rotate-12 opacity-10" delay={4} />
 
-            <div className="max-w-7xl mx-auto px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-3 gap-16 mb-24 items-center">
                     <div className="lg:col-span-1">
                         <h2 className="text-5xl font-bold tracking-tight mb-8">Our Services</h2>

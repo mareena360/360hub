@@ -3,21 +3,18 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import DoodleShapes from "@/components/ui/DoodleShapes";
 
 export default function Hero() {
     return (
-        <section id="home" className="relative h-screen max-h-[1000px] min-h-[600px] flex items-center overflow-hidden bg-white">
-            {/* Background Decorative Shapes */}
-            <div className="absolute top-0 right-0 w-[50%] h-full -z-10 opacity-30 pointer-events-none">
-                <motion.div
-                    animate={{
-                        rotate: [0, 10, 0],
-                        scale: [1, 1.05, 1],
-                    }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                    className="w-[120%] h-[120%] bg-zinc-100 rounded-[100px] -rotate-12 absolute -top-20 -right-20"
-                />
-            </div>
+        <section id="home" className="relative h-screen max-h-[100vh] flex items-center pt-16 overflow-hidden">
+            {/* Decorative Background Elements */}
+            <DoodleShapes type="squiggle" className="absolute top-1/4 left-10 text-gray-100 hidden lg:block" delay={0.5} />
+            <DoodleShapes type="dots" className="absolute top-3/4 left-[15%] hidden lg:block" delay={1.2} />
+            <DoodleShapes type="plus" className="absolute top-[20%] right-[10%] opacity-20 hidden lg:block" delay={2} />
+            <DoodleShapes type="circle" className="absolute bottom-10 right-[25%] opacity-10 hidden lg:block" delay={0.8} />
+
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-50/50 rounded-full blur-3xl -z-10 animate-pulse" />
 
             <div className="section-padding grid lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto">
                 <motion.div
