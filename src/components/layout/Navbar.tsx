@@ -35,18 +35,16 @@ export default function Navbar({ logoPath }: { logoPath: string }) {
         >
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <Link href="/" className="flex items-center gap-3">
-                    <div className="relative w-8 h-8">
+                    <div className="relative w-32 h-10 md:w-48 md:h-14">
                         <Image
                             src={logoPath}
                             alt="360° Degree Hub"
                             fill
-                            className="object-contain"
+                            className="object-contain object-left md:object-center"
                         />
                     </div>
                     <div className="flex flex-col">
-                        <span className="text-[10px] font-bold tracking-[0.3em] text-muted-foreground uppercase">
-                            360° Degree Hub
-                        </span>
+
                     </div>
                 </Link>
 

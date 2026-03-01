@@ -10,7 +10,7 @@ export default function Footer() {
                         <Link href="/" className="flex items-center gap-2 mb-8 group">
                             <div className="relative w-10 h-10 overflow-hidden rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors">
                                 <Image
-                                    src="/logo.png"
+                                    src="/logo.svg"
                                     alt="360° Degree Hub"
                                     fill
                                     className="object-contain p-1 invert"
