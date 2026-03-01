@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://360degreehub.ae/sitemap.xml',
+        sitemap: 'https://www.360degreehub.ae/sitemap.xml',
     }
 }

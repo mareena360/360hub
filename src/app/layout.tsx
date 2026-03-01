@@ -7,7 +7,7 @@ import Preloader from "@/components/ui/Preloader"; const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://360degreehub.ae'),
+  metadataBase: new URL('https://www.360degreehub.ae'),
   title: "360° Degree Hub | Premium Consultancy UAE",
   description: "Comprehensive 360° solutions for company formation, tax advisory, and audit services in the UAE.",
   keywords: ["company formation UAE", "tax advisory Dubai", "audit services UAE", "business setup Dubai", "360 degree hub consultancy"],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_AE",
-    url: "https://360degreehub.ae",
+    url: "https://www.360degreehub.ae",
     title: "360° Degree Hub | Premium Consultancy UAE",
     description: "Comprehensive 360° solutions for company formation, tax advisory, and audit services in the UAE.",
     siteName: "360° Degree Hub",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     images: ["/logo.svg"],
   },
   alternates: {
-    canonical: "https://360degreehub.ae",
+    canonical: "https://www.360degreehub.ae",
   },
   robots: {
     index: true,

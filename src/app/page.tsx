@@ -12,9 +12,9 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Consultancy",
     "name": "360° Degree Hub",
-    "image": "https://360degreehub.ae/logo.svg",
+    "image": "https://www.360degreehub.ae/logo.svg",
     "description": "Comprehensive 360° solutions for company formation, tax advisory, and audit services in the UAE.",
-    "url": "https://360degreehub.ae",
+    "url": "https://www.360degreehub.ae",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "AE"
